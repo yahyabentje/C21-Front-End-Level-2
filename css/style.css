@@ -1,14 +1,15 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-
-
-font-family: 'Source Sans Pro', sans-serif;
-font-family: 'Karla', sans-serif;
 
 
 *{
   margin:0;
   padding:0;
 
+}
+
+body{
+    background-color: #cccccc;
 }
 
 html{
@@ -19,9 +20,64 @@ html{
     line-height: 1.8;
 }
 
+.wrapper{
+    max-width: 1795px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+header{
+    box-shadow: 0 2px 8px rgb( 0 0 0 / 6%);
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin-bottom: 40px;
+}
+
+.logo{
+    margin-top: 10px;
+}
+
+ul.main-menu{
+    list-style: none;
+    color: #4e4b4b ;
+}
+
+
+li.social-item{
+    display: inline-block;
+    padding-right: 15px;
+}
+
+li.menu-item{
+    display: inline-block;
+    padding-right: 15px;
+}
+
+li.menu-item::after{
+    content: " | ";
+    padding-left: 10px;
+}
+
+li.menu-item a{
+    color: #4e4b4b ;
+}
+
+li.social-item a:hover{
+    color: #ca404f ;
+}
+
+li.social-item a{
+    color: #4e4b4b ;
+}
+
 h1, h2, h3, h4, h5, h6{
     font-family: 'Karla', sans-serif;
     font-style: normal;
+    font-weight: normal;
     color: #4e4b4b ;
     line-height: 1.8;
 }
@@ -51,8 +107,79 @@ a{
 
 button{
     font-family: 'Karla', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
+    padding:0 20px;
     background-color: #ca404f;
+    line-height: 10px;
+    border: none;
+    height: 42px;
 }
 
+main{
+    padding: 0 100px 40px 100px;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+}
+
+.recepten{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recept{
+    width: 1040px;
+    display: flex;
+
+}
+
+.descritption{
+    width: 485px;
+    margin-top: 70px;
+
+}
+
+.descritption h4{
+    margin-top: 15px;
+}
+
+.descritption p{
+    margin: 60px 0;
+}
+
+
+
+.recept-image img{
+    width: 485px;
+}
+
+.recept-items{
+    width: 485px;
+}   
+
+.recept-items .item{
+    display: grid;
+    grid-template-columns: auto 100px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 15px;
+    
+}
+
+.recept-items .item :hover{
+    background-color: #eaeaea;
+    padding-left: 10px;
+    
+}
+
+.item-text{
+    display: flex;
+    flex-direction: column; 
+    justify-content:center;
+    margin-right: 10px;
+
+}
