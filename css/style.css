@@ -60,7 +60,9 @@ li.menu-item{
 li.menu-item::after{
     content: " | ";
     padding-left: 10px;
+    color: #eaeaea
 }
+
 
 li.menu-item a{
     color: #4e4b4b ;
